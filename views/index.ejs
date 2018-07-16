@@ -2,31 +2,31 @@
 
 <div id="wrapper">
 
-    <!-- <div id="sidebar-wrapper">
+    <div id="sidebar-wrapper">
         <div class="sidebar-brand">
-            <a href="/">DearGori</a>
+            <a href="/">Dear Gori</a>
         </div>
 
         <ul class="sidebar-nav">
            <img src="http://placehold.it/100x100" class="img-responsive img-circle profile_img" alt="">
             <div class="profile_info">
                 <span>Welcome,</span>
-                <h2>Guest</h2>
+                <!-- <h2>Guest</h2> -->
             </div>
             
             <li><a href="/signup"><i class="fa fa-registered"></i> Register Here</a></li>
-            <li class="lists">As a guest you can see the schools that have signed up to our platform.</li>
+            <li class="lists"> <strong><b>Dear Jenny,</b></strong> <br>I am sorry really sorry.</li>
             
-            <li class="lists">After registration, you can register a school, rate and review other schools.</li>
+            <li class="lists">This app is dedicated to the best person ever in the world <strong><h2>Jenny</h2></strong></li>
 
         </ul>
-    </div> -->
+    </div>
 
 
     <div id="page-content-wrapper">
        <% include partials/nav %>
         <div class="container-fluid main_body">
-           <h1>Welcome to DearGori</h1>
+           <h1>Dear Gori,</h1>
            <!-- <div class="ul_links">
 	            <ul>
 	                <li><a href="/">Home</a></li> |
@@ -70,11 +70,80 @@
         
         
             -->
-       </div>
+       
+       
+       
+       <!-- <aaaa> -->
+
+
+
+<!-- Page content -->
+<div class="w3-content" style=max-height:40px;"margin-top:46px">
+    
+      <!-- Automatic Slideshow Images -->
+      <div class="mySlides w3-display-container w3-center">
+        <!-- <img src="/uploads/1.jpg" style="width:100%"> -->
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+          <h3>Gori,</h3>
+          <p><b>I am very sorry!</b></p>   
+        </div>
+      </div>
+      <div class="mySlides w3-display-container w3-center">
+        <!-- <img src="/uploads/2.jpg" style="width:100%"> -->
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+          <h3>Maya,</h3>
+          <p><b>I love you.</b></p>    
+        </div>
+      </div>
+      <div class="mySlides w3-display-container w3-center">
+        <!-- <img src="/uploads/3.jpg" style="width:100%"> -->
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+          <h3>Kanchi,</h3>
+          <p><b>Please forgive me?</b></p>    
+        </div>
+      </div>
+      
+
+
+      <!-- Page content -->
+
     </div>
 
+    <!-- <style>
+            .panel-body {
+                background-image: none;
+                background-color: rgb(164, 75, 189);
+                color: white;
+            
+            }
+
+
+            .panel-head {
+                background-image: none;
+                background-color: rgb(43, 21, 49);
+                color: white;
+            </style> -->
+    <!-- Add Google Maps -->
+    
+    <script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 3000);    
+    }
+    
+    </script>       
+     </div>
+    </div>
 </div>
     
-    
-
-
