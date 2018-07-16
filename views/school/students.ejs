@@ -1,0 +1,57 @@
+<% layout('layout2') %>
+
+<div id="wrapper">
+
+    <% include ../partials/sidebar %>
+
+    <div id="page-content-wrapper">
+        <% include ../partials/navbar %>
+        <div class="container-fluid main_body">
+			<div class="ul_links">
+	            <ul>
+	                <li><a href="/home">Home</a></li>|
+	                <li><a href="/schools">Groups</a></li> 
+	                <!-- <li><a href="#">Search</a></li> -->
+	            </ul>
+	        </div>
+
+            <div class="bodyDiv">
+				<h4 style="">Avaliable Users</h4>
+            
+                <table class="table table-bordered">
+                   <thead>
+                       <tr>
+                           <th>Fullname</th>
+                           <th>Position</th>
+                           <th></th>
+                       </tr>
+                   </thead>
+                   
+                   <tbody>
+                       <% if(data.students.length > 0) {%>
+                           <% data.students.forEach(function(val){ %>
+                           
+                               <tr>
+                                   <td><%= val.studentFullname %></td>
+                                   <td><%= val.studentRole %></td>
+                                   <td><a href="/message/<%= val.studentId %>" class="btn btn-primary">Send Message</a></td>
+                               </tr>
+                           
+                           <% }) %>
+                       <% } else {%>
+                           <tr>
+                               <td><p>No registered student yet</p></td>
+                           </tr>
+                       <% } %>
+                   </tbody>
+                    
+                </table>
+	            
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
